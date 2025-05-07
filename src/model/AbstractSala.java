@@ -1,18 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
+//Classe pai abstrata para modelo 
 public abstract class AbstractSala {
     protected String bloco;
     protected int numero;
 
+    //Atributos
     public AbstractSala(String bloco, int numero) {
         this.bloco = bloco;
         this.numero = numero;
     }
 
+    //Encapsulamento
     public String getBloco() {
         return bloco;
     }

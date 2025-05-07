@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
-
+//Classe Projetor herdando de sala
 public class Projetor extends Sala {
     public String marca;
 
+    //Atributos da classe pai
     public Projetor(String bloco, int numero, String marca) {
         super(bloco, numero);
         this.bloco = bloco;

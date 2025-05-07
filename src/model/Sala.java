@@ -1,18 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package model;
 
-/**
- *
- * @author Davi Ramos
- */
+//Herança da classe AbstractSala
 public class Sala extends AbstractSala {
     
     protected int numero;
     protected String bloco;
 
+    //Atributos da classe pai
     public Sala(String bloco, int numero) {
         super(bloco, numero);
     }

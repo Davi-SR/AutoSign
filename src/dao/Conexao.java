@@ -7,17 +7,14 @@ import java.sql.SQLException;
 
 public class Conexao {
     
-    public Connection getConnection(){
+    private static final String URL = "jbdc:mysql://localhost:3306/autosign";
+    private static final String USUARIO = "root";
+    private static final String SENHA = "@Dudua130299";
+    
+    public Connection getConnection() throws SQLException{
+        //"jbdc:mysql://localhost:3306/autosign?user=root&password=@Dudua130299"
         
-        Connection conexao = null;
+        return DriverManager.getConnection(URL, USUARIO, SENHA);
         
-       try{ 
-           String url = "jbdc:mysql://localhost:3306/autosign?user=root&password=@Dudua130299";
-           conexao = DriverManager.getConnection(url);
-          
-       }catch(SQLException erro){
-           JOptionPane.showMessageDialog(null, "conexaoDAO" + erro.getMessage());
-       }
-       return conexao;
     }
 }

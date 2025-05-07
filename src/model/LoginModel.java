@@ -4,7 +4,8 @@ package model;
 public class LoginModel {
     
     private String user,email,senha;
-            
+    
+    //Inicio Construtor
     public LoginModel(String user, String senha) {
         this.user = user;
         this.senha = senha;
@@ -15,7 +16,9 @@ public class LoginModel {
         this.email = email;
         this.senha = senha;
     }
-
+    //Fim Construtor
+    
+    //Encapsulamento
     public String getUser() {
         return user;
     }
