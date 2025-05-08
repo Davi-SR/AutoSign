@@ -1,15 +1,29 @@
 package model;
 
 //Classe Projetor herdando de sala
-public class Projetor extends Sala {
-    public String marca;
+
+/**
+ *
+ * @author Davi Ramos
+ */
+public class Projetor extends AbstractSala {
+    private String marca;
 
     //Atributos da classe pai
     public Projetor(String bloco, int numero, String marca) {
         super(bloco, numero);
         this.bloco = bloco;
         this.numero = numero;
+        
+    }
+    
+    // Encapsulamento da marca
+    public void setmarca(String marca){
         this.marca = marca;
+    }
+    
+    public String getmarca(){
+        return marca;
     }
     
    
