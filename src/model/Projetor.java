@@ -1,6 +1,6 @@
 package model;
 
-//Classe Projetor herdando de sala
+//Subclasse Projetor herdando de sala
 
 /**
  *
@@ -14,8 +14,7 @@ public class Projetor extends AbstractSala {
         super(bloco, numero);
         this.bloco = bloco;
         this.numero = numero;
-        
-    }
+           }
     
     // Encapsulamento da marca
     public void setmarca(String marca){
