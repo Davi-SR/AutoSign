@@ -57,7 +57,7 @@ public class InicialView extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 560));
 
-        pack();
+        setSize(new java.awt.Dimension(966, 567));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

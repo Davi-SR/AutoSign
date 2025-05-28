@@ -1,10 +1,10 @@
 package model;
 
-public class SalaModel {
+public abstract class SalaModel {
     
     private int id;
-    private String bloco;
-    private int numero;
+    protected String bloco;
+    protected int numero;
     
     
     //Construtor 

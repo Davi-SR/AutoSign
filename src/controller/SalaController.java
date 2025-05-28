@@ -7,12 +7,14 @@ import java.sql.SQLException;
 import view.CadastroSalaView;
 
 public class SalaController {
-    
-    //metodo para preencher as informações da Sala no MySQL
+
+    // metodo para preencher as informações da Sala no MySQL
     public void cadastrarSala(CadastroSalaView view) throws SQLException {
         Connection conexao = new Conexao().getConnection();
         SalaDAO dao = new SalaDAO();
-        dao.cadastrarSala(Integer.parseInt(view.getjTextFieldSala().getText()), view.getjTextFieldBloco().getText());
-        
+        dao.cadastrarSala(
+            Integer.parseInt(view.getjTextFieldSala().getText()), 
+            view.getjComboBoxBloco().getSelectedItem().toString()
+        );
     }
 }

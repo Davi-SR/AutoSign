@@ -60,7 +60,7 @@ public class LoginView extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1106, -1));
 
-        pack();
+        setSize(new java.awt.Dimension(1119, 653));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
